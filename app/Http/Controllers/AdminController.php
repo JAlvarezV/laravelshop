@@ -65,5 +65,28 @@ class AdminController extends Controller
         return view('admin.edit.user')->with("user",$user);
     }
 
+    public function updateUser(Request $request){
+       $user = User::find($request->id);
+       if($request->name!="")
+        $user->name = $request->name;
+       $user->surname = $request->surname;
+       $user->address = $request->address;
+       $user->phone = $request->phone;
+       $user->save();
+       return redirect()->back();
+    }
+
+    public function updateItem(Request $request){
+        $item = Item::find($request->id);
+        if($request->name!="")
+            $item->name = $request->name;
+        $item->ref = $request->ref;
+        $item->description = $request->description;
+        $item->price = $request->price;
+        $item->save();
+        return redirect()->back();
+    }
+
+
 
 }

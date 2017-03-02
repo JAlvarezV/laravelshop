@@ -31,8 +31,9 @@ Route::get('admin/productos','AdminController@listItems');
 Route::get('admin/delete/item/{id}','AdminController@deleteItem');
 Route::get('admin/delete/user/{id}','AdminController@deleteUser');
 Route::get('admin/edit/user/{id}','AdminController@editUser');
+Route::post('admin/save/user', 'AdminController@updateUser');
 Route::get('admin/edit/item/{id}','AdminController@editItem');
-
+Route::post('admin/save/item', 'AdminController@updateItem');
 
 
 

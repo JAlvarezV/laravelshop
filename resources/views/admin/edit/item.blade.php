@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-xs-12">
             <form method="post" action="{{url('admin/save/item')}}">
-                <input type="hidden" value="{{$producto->id}}">
+                <input type="hidden" name="id" value="{{$producto->id}}">
                 {{csrf_field()}}
                 <div class="form-group">
                     <label for="input-ref">Referencia</label>

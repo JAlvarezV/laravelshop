@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-xs-12">
             <form method="post" action="{{url('admin/save/user')}}">
-                <input type="hidden" value="{{$user->id}}">
+                <input type="hidden" name="id" value="{{$user->id}}">
                 {{csrf_field()}}
                 <div class="form-group">
                     <label for="input-name">Nombre</label>
