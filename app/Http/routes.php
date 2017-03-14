@@ -35,6 +35,10 @@ Route::post('admin/save/user', 'AdminController@updateUser');
 Route::get('admin/edit/item/{id}','AdminController@editItem');
 Route::post('admin/save/item', 'AdminController@updateItem');
 
+Route::get('admin/add/user','AdminController@newUser');
+Route::get('admin/add/item','AdminController@newItem');
 
+Route::post('admin/save/nuser','AdminController@addUser');
+Route::post('admin/save/nitem','AdminController@addItem');
 
 

@@ -87,6 +87,38 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+    public function newUser(){
+        return view('admin.add.user');
+    }
+
+    public function newItem(){
+        return view('admin.add.item');
+    }
+
+    public function addUser(Request $request){
+        $tempUser = new User();
+        $tempUser->name = $request->name;
+        $tempUser->surname = $request->surname;
+        $tempUser->email = $request->email;
+        $tempUser->address = $request->address;
+        $tempUser->phone = $request->phone;
+        $tempUser->save();
+        return redirect()->to('admin/usuarios');
+    }
+
+    public function addItem(Request $request){
+        $tempItem = new Item();
+        $tempItem->ref=$request->ref;
+        $tempItem->name=$request->name;
+        $tempItem->description=$request->description;
+        $tempItem->img_url=$request->img_url;
+        $tempItem->price=$request->price;
+        $tempItem->stock=$request->stock;
+        $tempItem->stock_min=$request->stock_min;
+        $tempItem->save();
+        return redirect()->to('admin/productos');
+    }
+
 
 
 }

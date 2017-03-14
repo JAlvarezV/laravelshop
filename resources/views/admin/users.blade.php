@@ -3,7 +3,13 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Usuarios</h1>
+            <h1 class="page-header">Usuarios
+                <a href="{{url('admin/add/user')}}">
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Añadir usuario
+                    </button>
+                </a>
+            </h1>
         </div>
     </div>
     <div class="row">

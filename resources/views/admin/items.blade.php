@@ -3,7 +3,13 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Productos</h1>
+            <h1 class="page-header">Productos
+                <a href="{{url('admin/add/item')}}">
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Añadir producto
+                    </button>
+                </a>
+            </h1>
         </div>
     </div>
     <div class="row">
