@@ -77,6 +77,14 @@
     <!-- /.container -->
 </nav>
     @yield('content')
+    <div class="row">
+        <div class="col-xs-12">
+            <footer class="footer bg-success">
+                    <h3 class="text-center">Juan Carlos Álvarez - Desarrollo Web Entorno Servidor - 2017</h3>
+            </footer>
+        </div>
+    </div>
+
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
